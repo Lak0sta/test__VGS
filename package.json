@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lak0sta/myBower_template.git"
+    "url": "git+https://github.com/Lak0sta/test__VGS.git"
   },
   "author": "Lak0sta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lak0sta/myBower_template/issues"
+    "url": "https://github.com/Lak0sta/test__VGS/issues"
   },
-  "homepage": "https://github.com/Lak0sta/myBower_template#readme",
+  "homepage": "https://github.com/Lak0sta/test__VGS#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
