@@ -1,0 +1,130 @@
+@media screen and (max-width: 767px) {
+	.mainInfo{
+		@include flex;
+		padding-top: 2.4rem;
+		padding-bottom: 3rem;
+		&__img{
+			clip-path: circle(50% at center center);
+			height: 9.6rem;
+			width: 9.6rem;
+			
+			background-size: cover;
+			margin-right: 3rem;
+		}
+		&__info{
+			@include flex;
+			flex-direction: column;
+			&__name{
+				font-family: $secondary-font-family;
+				font-size: 2rem;
+				line-height: 2.5rem;
+				padding-bottom: 0.5rem;
+			}
+			&__profession{
+				font-family: $base-font-family;
+				font-size: 1.8rem;
+				line-height: 1.8rem;
+				color: #333333;
+				padding-bottom: 0.6rem;
+			}
+			&__town{
+				font-family: $base-font-family;
+				font-size: 1.5rem;
+				line-height: 2.1rem;
+				color: #333333;
+				
+				
+			}
+		}
+	}
+	.item__time{
+	&__timezone{
+		display: block;
+		font-family: $base-font-family;
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		color: #828282;
+	}
+	&__current{
+		font-family: $base-font-family;
+		@include font(2rem,2.8rem,#4F4F4F);
+		text-transform: uppercase;
+	}
+}
+.contacts{
+	@include flex;
+	flex-direction: column;
+	padding-right: 0.4rem;
+	&__tel{
+		font-family: $base-font-family;
+		@include font(1.8rem,1.9rem,#4F4F4F);
+		padding-bottom: 1.2rem;
+		text-align: right;
+	}
+	&__mail{
+		text-decoration: underline;
+		font-family: $base-font-family;
+		@include font(1.5rem,1.6rem,#2F80ED);
+	}
+}
+}
+@media screen and (max-width: 630px) {
+    .main-wrapper{
+        padding: 0 1rem;
+    }
+    .wrapper{
+        padding: 0 1rem;
+    }
+    .container{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .list{
+        &__title{
+            @include font(2.3rem,3.8rem,#333333);
+        }
+        &__status{
+            &__info{
+                padding: 0 1rem;
+            }
+        }
+        &__search{
+            &__input{
+               @include font(1.6rem,2rem,inherit);
+            }
+        }
+    }
+    .status{
+        &__result{
+            @include font(1.3rem,2.1rem,#4F4F4F);
+        }
+        &__button{
+            @include font(1.3rem,2.1rem,#FFFFFF);
+        }
+    }
+    .form{
+        &__item{
+            @include font(1.4rem,1.5rem,#4F4F4F);
+            width: 10rem;
+        }
+    }
+    .mainInfo{
+        padding-bottom: 1.5rem;
+    }
+    .item__time{
+        padding-bottom: 2rem;
+    }
+    .item__contactsMore{
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    .contacts{
+        &__tel{
+            text-align: center;
+        }
+    }
+    .town__address{
+        bottom: 72%;
+        left: 20%;
+    }
+}

@@ -1,0 +1,314 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+.list{
+	@include flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	&__title{
+		font-family: $base-font-family;
+		@include font(3.2rem,3.8rem,#333333);
+		font-weight: 400;
+		padding: 3.8rem 0;
+	}
+	&__status{
+		width: 100%;
+		border-top: 1px solid #E0E0E0;
+		border-bottom: 1px solid #E0E0E0;
+		&__info{
+			padding: 0 4rem;;
+			min-width: $min-width;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			min-height:100%;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			justify-content:space-between;	
+			-webkit-justify-content:space-between;	
+			-ms-flex-pack: between;
+			align-items: center;
+		}
+		
+	}
+	&__search{
+		padding-bottom: 3.2rem;
+		position: relative;
+		&__icon{
+			background: #ffffff;
+			border: none;
+			position: absolute;
+			color: #828282;
+			top:15%;
+			right: 3%;
+		}
+		&__input{
+			width: 100%;
+			font-family: $base-font-family;
+			@include font(2.2rem,2.6rem,inherit);
+			font-weight: 400;
+			padding: 0.8rem 0 1rem 2.4rem;
+			border: 1px solid #8EB7ED;
+			border-radius: 6px;
+			box-shadow: 0px 0px 6px #2F80ED;
+		}
+	}
+	&__result{
+		width: 100%;
+		@include flex;
+		flex-direction: column;
+	}
+}
+.status{
+	&__result{
+		@include font(1.8rem,2.1rem,#4F4F4F);
+		padding: 1.9rem 0;
+	}
+	&__button{
+		position: relative;
+		font-family: $base-font-family;
+		@include font(1.6rem,1.9rem,#FFFFFF);
+		background:  #6FCF97;
+		border: 1px solid #219653;
+		border-radius: 6px;
+		padding: 0.4rem 2.5rem;
+		&__icon{
+			display: block;
+			position: absolute;
+			top: 15%;
+			left: 8%;
+		}
+		&__text{
+			padding-left: 1.3rem;
+		}
+	}
+}
+.form{
+	@include flex;
+	padding-bottom: 2.4rem;
+	
+	&__item{
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		font-family: $base-font-family;
+		@include font(1.6rem,2.9rem,#4F4F4F);
+		height: 3.2rem;
+		width: 15rem;
+		border: 1px solid #BDBDBD;
+		transition: 0.6s ease-out;
+		
+	}
+}
+.result__item{
+		
+		border-bottom:1px solid #F2F2F2;
+}
+.item__time{
+	&__timezone{
+		display: block;
+		font-family: $base-font-family;
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		color: #828282;
+	}
+	&__current{
+		font-family: $base-font-family;
+		@include font(2rem,2.8rem,#4F4F4F);
+		text-transform: uppercase;
+	}
+}
+.contacts{
+	@include flex;
+	flex-direction: column;
+	padding-right: 3.4rem;
+	&__tel{
+		font-family: $base-font-family;
+		@include font(1.6rem,1.9rem,#4F4F4F);
+		padding-bottom: 1.2rem;
+		text-align: right;
+	}
+	&__mail{
+		text-decoration: underline;
+		font-family: $base-font-family;
+		@include font(1.4rem,1.6rem,#2F80ED);
+	}
+}
+.item__contactsMore{
+	@include flex;
+	
+}
+.more{
+	position: relative;
+	&__menu{
+		z-index: -1;
+		opacity: 0;
+		position: absolute;
+		top: -25%;
+		right: -772%;
+		width: 128px;
+		height: 128px;
+		background: #FFFFFF;
+		border: 1px solid #E0E0E0;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 32px rgba(184, 184, 184, 0.64), 0px 2px 4px rgba(163, 163, 163, 0.24);
+		border-radius: 3px;
+		transition: 0.7s ease-in-out;
+		&__item{
+			font-family: $base-font-family;
+			@include font(1.4rem,2.7rem,#4F4F4F);
+			padding: 0.8rem 3rem 0.8rem 2.4rem;
+		}
+		&__icon{
+			padding-left: 2rem;
+		}
+	}
+}
+.more__icon{
+	cursor: pointer;
+	z-index: 3;
+}
+.rem{
+	color:  #EB5757;
+	border-top: 1px solid #F2F2F2;
+}
+
+.mainInfo{
+	@include flex;
+	padding-top: 2.4rem;
+	padding-bottom: 3rem;
+	&__img{
+		clip-path: circle(50% at center center);
+		height: 9.6rem;
+		width: 9.6rem;
+		background: url('../img/image1.png') no-repeat top;
+		background-size: cover;
+		margin-right: 3rem;
+	}
+	&__info{
+		@include flex;
+		flex-direction: column;
+		&__name{
+			font-family: $secondary-font-family;
+			font-size: 2.8rem;
+			line-height: 3.3rem;
+			padding-bottom: 0.5rem;
+		}
+		&__profession{
+			font-family: $base-font-family;
+			font-size: 2.4rem;
+			line-height: 2.8rem;
+			color: #333333;
+			padding-bottom: 0.6rem;
+		}
+		&__town{
+			font-family: $base-font-family;
+			font-size: 1.8rem;
+			line-height: 2.1rem;
+			color: #333333;
+			
+			
+		}
+	}
+}
+.town{
+	&__floor{
+		font-family: $base-font-family;
+		font-size: 1.4rem;
+		color: #828282;
+		padding-left: 1.6rem;
+	}
+	&__link{
+		border-bottom: 1px dashed #373737;
+		cursor: pointer;
+		
+	}
+	&__address{
+		display: block;
+		opacity: 0;
+		z-index: -1;
+		position: absolute;
+		bottom: 39%;
+		left: 5%;
+		width: 232px;
+		height: 112px; 
+		background: #FFFFFF;
+		border: 1px solid #E0E0E0;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 32px rgba(184, 184, 184, 0.64), 0px 2px 4px rgba(163, 163, 163, 0.24);
+		border-radius: 3px;
+		font-family: $base-font-family;
+		@include font(1.6rem, 2.1rem, #333333);
+		padding: 2rem;
+		transition: 0.7s ease-in-out;
+		
+	}
+	&__address:after{
+		border: medium solid transparent;
+		content: "";
+		top: 100%;
+		left: 50%;
+		position: absolute;
+		height: 0;
+		width: 0;
+		border-color: #FFFFFF rgba(255, 212, 52, 0) rgba(255, 212, 52, 0);
+		border-width: 8px;
+		margin-left: -9px;
+		
+	}
+}
+
+.left{
+	border-radius: 6px 0px 0px 6px;
+	-moz-border-radius: 6px 0px 0px 6px;
+	-webkit-border-radius: 6px 0px 0px 6px;
+	border: 1px solid #BDBDBD;
+}
+.right{
+	border-radius: 0px 6px 6px 0px;
+	-moz-border-radius:  0px 6px 6px 0px;
+	-webkit-border-radius:  0px 6px 6px 0px;
+	border: 1px solid #BDBDBD;
+}
+.bd__r{
+	border-right: 0px solid #000;
+}
+.active{
+	transition: 0.6s ease-out;
+	background: #2D9CDB;
+	color: #ffffff;
+}
+.show{
+	z-index: 1;
+	opacity: 1;
+	transition: 0.7s ease-in-out;
+}
+.pd-r{
+	padding-right: 3.9rem;
+}
+.emp1{
+	background: url('../img/image1.png') no-repeat top;
+}
+.emp2{
+	background: url('../img/image2.png') no-repeat top;
+}
+.emp3{
+	background: url('../img/image3.png') no-repeat top;
+}
+.emp4{
+	background: url('../img/image4.png') no-repeat top;
+}
+.emp5{
+	background: url('../img/image5.png') no-repeat top;
+}
+.emp6{
+	background: url('../img/image6.png') no-repeat top;
+}
+

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'NotoSansUI';
+  src: url('../fonts/NotoSansUI-Regular.eot');
+  src: url('../fonts/NotoSansUI-Regular.woff2') format('woff2'),
+       url('../fonts/NotoSansUI-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+  font-family: 'NotoSansUI';
+  src: url('../fonts/NotoSansUI.woff') format('woff'),
+       url('../fonts/NotoSansUI.ttf') format('truetype'),
+       url('../fonts/NotoSansUI.svg#NotoSansUI') format('svg');
+  font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FFFD;
+}
+
+@font-face {
+  font-family: 'NotoSansUI-Bold';
+  src: url('../fonts/NotoSansUI-Bold.eot');
+  src: url('../fonts/NotoSansUI-Bold.woff2') format('woff2'),
+       url('../fonts/NotoSansUI-Bold.woff') format('woff'),
+       url('../fonts/NotoSansUI-Bold.ttf') format('truetype'),
+       url('../fonts/NotoSansUI-Bold.svg#NotoSansUI-Bold') format('svg'),
+       url('../fonts/NotoSansUI-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-FFFD;
+}
