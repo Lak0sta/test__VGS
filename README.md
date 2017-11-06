@@ -1,1 +1,1 @@
-[HERE](https://github.io/Lak0sta/test__VGS/dev)
+[HERE](https://lak0sta.github.io/test__VGS/dev)
